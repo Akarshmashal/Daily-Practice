@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom7</title>
+  </head>
+  <body id="body">
+    <script>
+      var h1red = document.createElement("h1");
+      h1red.innerHTML = "Welcome to Pentagon";
+      h1red.style.border = "2px solid black ";
+      h1red.style.color = "red";
+      h1red.style.backgroundColor = "purple";
+
+      var body = document.getElementById("body");
+      body.appendChild(h1red);
+
+      var btn = document.createElement("button");
+      btn.innerHTML = "Clickhere";
+      body.appendChild(btn);
+    </script>
+    
+    <h1>----------------------------------------------------------------</h1>
+
+    <h1 id="one">Welcome</h1>
+    <p id="two">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolore
+      corrupti enim adipisci ab id. Incidunt provident adipisci, quis aperiam
+      repudiandae, expedita cumque fugit aut id unde eaque? Reprehenderit,
+      repellat!
+    </p>
+    <h1>pentagonSpace</h1>
+
+    <script>
+        var h1ref=document.getElementById('one')
+        h1ref.remove()
+
+       var p= document.getElementById('two')
+       p.remove()
+    </script>
+  </body>
+</html>

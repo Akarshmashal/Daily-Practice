@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React and Angular Image Change Button</title>
+    <style>
+        div{
+            margin-top: 90px;
+            text-align: center;
+        }
+        button
+        {
+            margin: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+   <div>
+    <img id="img"src="https://c0.klipartz.com/pngpicture/497/691/sticker-png-angularjs-data-binding-web-application-angular-angle-triangle-logo-web-application-line-thumbnail.png" alt="">
+    <br><br>
+    <button onclick=" ChangeImageAngular()">Angular</button>
+    <button onclick=" ChangeImageReact()">React</button>
+   </div>
+
+   <script>
+    function ChangeImageAngular()
+    {
+       var image= document.getElementById('img')
+       image.src="https://c0.klipartz.com/pngpicture/497/691/sticker-png-angularjs-data-binding-web-application-angular-angle-triangle-logo-web-application-line-thumbnail.png"
+
+    }
+    function ChangeImageReact()
+    {
+       var image= document.getElementById('img')
+       image.src="https://w7.pngwing.com/pngs/79/518/png-transparent-js-react-js-logo-react-react-native-logos-icon-thumbnail.png"
+
+    }
+   </script>
+</body>
+</html>

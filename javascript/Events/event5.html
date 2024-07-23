@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn">Submit</button>
+    <select id="Dropdown">
+      <option value="One">One</option>
+      <option value="Two">Two</option>
+      <option value="Three">Three</option>
+      <option value="Four">Four</option>
+      <option value="Five">Five</option>
+    </select>
+    <input type="text" id="txt" />
+    <script>
+      var btn = document.getElementById("btn");
+      btn.addEventListener("click", () => {
+        alert("Dabgaya");
+      });
+
+      var dropdown = document.getElementById("Dropdown");
+      dropdown.addEventListener("change", (event) => {
+        alert("Value Changed to " + event.target.value);
+      });
+
+      var text = document.getElementById("txt");
+      text.addEventListener("change", (event) => {
+        alert("You clicked button on keyboard" + event.target.value);
+      });
+    </script>
+  </body>
+</html>
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="one"></h1>
+    <p id="two"></p>
+    <script>
+      //Diff B/W textContent and innerHTML
+      //inner html recognise the html elements or tags but textcontent doesnot
+      
+      var h1ref = document.getElementById("one");
+      
+      // h1ref.innerHTML="<i>Welcome to PentagonSpace</i>"
+      h1ref.textContent = "<i>Welcome to PentagonSpace</i>";
+      h1ref.style.border = "5px solid blue";
+      h1ref.style.textAlign = "center";
+
+      var pref = document.getElementById("two");
+      
+      pref.innerHTML = "hello";
+      pref.style.color = "red";
+      pref.style.backgroundColor = "yellow";
+    </script>
+  </body>
+</html>

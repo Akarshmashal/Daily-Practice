@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello from hellside</h1>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi voluptatum,
+      exercitationem deserunt doloribus eius corporis ea quis voluptatibus
+      voluptas laudantium ipsa aperiam alias, ratione vel velit corrupti ab hic
+      dolor?
+    </p>
+    <h4 class="one">Go to hell from heaven side</h4>
+    <h4 class="one">bubyeee!!</h4>
+    <p id="one">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus velit
+      reprehenderit eius quam libero quisquam dolor quasi, consequuntur totam
+      laudantium dignissimos dolore unde sunt perspiciatis repellat deleniti
+      praesentium est facilis!
+    </p>
+    <p id="one">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
+      deserunt, cum eveniet necessitatibus dicta similique veniam accusantium
+      nihil unde odit commodi veritatis cumque sit expedita distinctio aliquid,
+      ipsam doloremque consectetur.
+    </p>
+    <script>
+      //document.querySelector
+      //Query selector() returns the first element in the document that matches the specific selectoror group of selector
+      //if no matches are found then it will return null
+      var res = document.querySelector("h1");
+      console.log(res);
+      var res = document.querySelector(".one");
+      console.log(res);
+      var res = document.querySelector("#one");
+      console.log(res);
+      //document.querySelectorAll()
+      //selects all the elements
+      var res1 = document.querySelectorAll("p");
+      console.log(res1);
+      //!-- res[0].style.color="red"
+      //res[1].style.backgroundColor="blue" -->
+      for (var x of res1) {
+        x.style.color = "Green";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+    <style>
+        
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h5 {
+            color: #007bff;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="number"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        input[type="button"],
+        input[type="submit"],
+        input[type="reset"],
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        input[type="button"]:hover,
+        input[type="submit"]:hover,
+        input[type="reset"]:hover,
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        input[type="image"] {
+            margin-top: 10px;
+        }
+
+        .hyper-button a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hyper-button {
+            background-color: #28a745;
+        }
+
+        .hyper-button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+
+<>
+
+    <div class="container">
+        <h5>Text box</h5>
+        <input type="text">
+        <br>
+        <h5>Password text box</h5>
+        <input type="password">
+        <br>
+        <h5>Radio Button (both)</h5>
+        <input type="radio">male
+        <input type="radio">female
+        <br>
+        <h5>Radio button (group)</h5>
+        <input type="radio" name="gender">male
+        <input type="radio" name="gender">female
+        <br>
+        <h5>Radio button (default male)</h5>
+        <input type="radio" name="gender" checked>male
+        <input type="radio" name="gender">female
+        <br>
+        <h5>Check Box </h5>
+        <input type="checkbox">Agree terms & condition
+        <br>
+        <h5>Check Box group</h5>
+        <input type="checkbox" name="skills">Java
+        <input type="checkbox" name="skills">Testing
+        <input type="checkbox" name="skills">HTML
+        <br>
+        <h5>Number text box</h5>
+        <input type="number">
+        <br>
+        <h5>Text area tag</h5>
+        <textarea name="" id="" rows="3"></textarea>
+        <br>
+        Address: <textarea name="" id="" rows="3"></textarea>
+        <br>
+        Comments: <textarea rows="5" cols="30"></textarea>
+        <br>
+        <h5>File</h5>
+        <input type="file">
+        <br>
+        <h5>Date</h5>
+        <input type="date">
+        <br>
+        <h5>Drop box</h5>
+        <select name="" id="">
+            <option value="">Karnataka</option>
+            <option value="">UP</option>
+            <option value="">MP</option>
+            <option value="">WB</option>
+        </select>
+        <br>
+        <h5>Label Tag</h5>
+        <label for="">Fname </label><input type="text">
+        <br>
+        <input type="radio"><label for="">Male</label>
+        <br>
+        <h5>Button Tag</h5>
+        <input type="button" value="Default Button">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        <input type="button" value="Login">
+        <input type="image" src="it_prd_ovw_cosm_chairs_08.jpg" width="100px">
+        <button type="button">Button</button>
+        <button type="submit">Sign Up</button>
+        <br>
+        <h5>Hyper Button</h5>
+        <button class="hyper-button">
+            <a href="https://github.com/">Github</a>
+        </button>
+    </div>
+
+    <ul>
+        <li>coffee</li>
+        <ul type="circle">
+        <li>black </li>
+        <li>trukish</li>
+    </ul>
+    <li>tea</li>
+    <ul type="circle">
+        <li>black</li>
+        <li>gree </li>
+    </ul>
+</li>
+        </body>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom2</title>
+  </head>
+  <body>
+    <h1 id="one">Welcome to PentagonSpace</h1>
+    <p id="two"></p>
+    <h1 id="three">Welcome to Pentagon</h1>
+    <button onclick="Changecontent()">Click Here</button>
+    <script>
+      //    document.getElementById()
+      //want access html element by using id
+
+      var h1ref = document.getElementById("one");
+      console.log(h1ref);
+      h1ref.innerHTML = "Welcome tp JS class";
+
+      var pref = document.getElementById("two");
+      pref.textContent = "Hi hello";
+
+      function Changecontent() {
+        var href = document.getElementById("three");
+        href.innerHTML = "Thank you";
+      }
+    </script>
+  </body>
+</html>

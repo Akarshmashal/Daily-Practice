@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onkeydown event listenr </title>
+</head>
+<body>
+    <!-- onkeydown event listenr - it treggers when ever any key on keyboard is pressed-->
+     <input type="text" onkeydown="Keypress(event)">
+     <script>
+        function Keypress(event)
+        {
+            console.log("Key Pressed"+event.target.value)
+        }
+     </script>
+</body>
+</html>

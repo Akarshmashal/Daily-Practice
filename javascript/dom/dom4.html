@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>document.getElementsByClassName</title>
+  </head>
+  <body> 
+    <h1>PentagonSpace</h1> 
+    <h1>Bengaluru</h1>
+    <p class="p1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eum
+      ipsam cum maxime cupiditate dolore commodi, repellendus sit voluptatem
+      velit perferendis. Neque explicabo quisquam ipsa aperiam facere. Adipisci,
+      unde illum!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eum
+      ipsam cum maxime cupiditate dolore commodi, repellendus sit voluptatem
+      velit perferendis. Neque explicabo quisquam ipsa aperiam facere. Adipisci,
+      unde illum!
+    </p>
+    <p class="p1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eum
+      ipsam cum maxime cupiditate dolore commodi, repellendus sit voluptatem
+      velit perferendis. Neque explicabo quisquam ipsa aperiam facere. Adipisci,
+      unde illum!
+    </p>
+    <p class="p1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eum
+      ipsam cum maxime cupiditate dolore commodi, repellendus sit voluptatem
+      velit perferendis. Neque explicabo quisquam ipsa aperiam facere. Adipisci,
+      unde illum!
+    </p>
+    <script>
+      var pararef=document.getElementsByClassName('p1')
+      console.log(pararef)
+      pararef[0].style.color="purple"
+      pararef[1].style.backgroundColor="Yellow"
+      pararef[2].style.border="5px solid blue"
+      pararef[0].innerHTML="Welcome to pentagonSpace"
+
+      //document.getElementsByTagName
+
+      var h1ref=document.getElementsByTagName('h1')
+      console.log(h1ref)
+     
+      var h1ref=document.getElementsByTagName('p')
+      console.log(p)
+
+
+    </script>
+  </body>
+</html>

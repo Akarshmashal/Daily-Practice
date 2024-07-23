@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <style>
+      * {
+        margin: 0px;
+      }
+      div {
+        padding: 50px;
+      }
+      header {
+        background-color: black;
+        color: white;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body id="body">
+    <header>
+      <h2>My First Page With JavaScript</h2>
+    </header>
+    <div>
+      <h2>User Details</h2>
+      <br />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem repudiandae
+        inventore minus incidunt voluptates pariatur quam tempora, ipsam
+        quaerat. Aliquam exercitationem sint optio ab soluta cumque culpa
+        corporis similique nemo?
+      </p>
+      <br />
+      <button onclick="Createtable()">Get User Details</button>
+      <script>
+        function Createtable() {
+          var body = document.getElementById("body");//Access body
+          var table = document.createElement("table");
+
+          //Creating 4 rows and 3 Columns
+
+          var tr1 = document.createElement("tr");
+          var tr2 = document.createElement("tr");
+          var tr3 = document.createElement("tr");
+          var tr4 = document.createElement("tr");
+
+          var th1 = document.createElement("th");
+          var th2 = document.createElement("th");
+          var th3 = document.createElement("th");
+
+          var td1 = document.createElement("td");
+          var td2 = document.createElement("td");
+          var td3 = document.createElement("td");
+
+          var td4 = document.createElement("td");
+          var td5 = document.createElement("td");
+          var td6 = document.createElement("td");
+
+          var td7 = document.createElement("td");
+          var td8 = document.createElement("td");
+          var td9 = document.createElement("td");
+
+          body.appendChild(table);//Adding Table to body
+
+          //Adding all the rows to table
+          table.appendChild(tr1);
+          table.appendChild(tr2);
+          table.appendChild(tr3);
+          table.appendChild(tr4);
+
+          //Adding data to table
+          th1.innerHTML = "ID";
+          th2.innerHTML = "NAME";
+          th3.innerHTML = "EMAIL";
+
+          td1.innerHTML = "101";
+          td1.innerHTML = "Raj Verma";
+          td3.innerHTML = "Raj@gamil.com";
+
+          td4.innerHTML = "102";
+          td5.innerHTML = "Riya Verma";
+          td6.innerHTML = "Riya@gmail.com";
+
+          td7.innerHTML = "103";
+          td8.innerHTML = "Akarsh Mashal";
+          td9.innerHTML = "Akarsh@gmail.com";
+
+          //Adding All the Columns to rows
+          tr1.appendChild(th1);
+          tr1.appendChild(th2);
+          tr1.appendChild(th3);
+
+          tr2.appendChild(td1);
+          tr2.appendChild(td2);
+          tr2.appendChild(td3);
+
+          tr3.appendChild(td4);
+          tr3.appendChild(td5);
+          tr3.appendChild(td6);
+
+          tr4.appendChild(td7);
+          tr4.appendChild(td8);
+          tr4.appendChild(td9);
+
+          tr1.style.backgroundColor = "black";
+          table.frame = "box";
+          table.rules = "all";
+          table.style.margin = "auto";
+          table.cellPadding = "10px";
+          table.width = "800px";
+          tr1.style.color = "white";
+          tr2.align = "center";
+          tr3.align = "center";
+          tr4.align = "center";
+        }
+      </script>
+    </div>
+  </body>
+</html>

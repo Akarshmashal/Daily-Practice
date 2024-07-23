@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>onclick event event listner</title>
+  </head>
+  <body>
+    <!-- onclick event event listner -->
+    <button onclick="onButtonClick()">Click Here</button> ||
+    <button onclick="AlertCall()">alert</button>
+    <script>
+      function onButtonClick() {
+        var para = document.createElement("p");
+        para.innerHTML = " Ram Ram Bhaiyoooo";
+        var body = document.body;
+        body.appendChild(para);
+      }
+      function AlertCall() {
+        alert("Aur bhai");
+      }
+    </script>
+  </body>
+</html>

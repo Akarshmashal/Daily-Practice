@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation using Html</title>
+    <style>
+      main {
+        width: 600px;
+        height: 600px;
+        box-shadow: 0px 0px 10px;
+        margin: 100px auto;
+        text-align: center;
+        border-radius: 20px;
+      }
+      #Myform {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        align-items: center;
+      }
+      input {
+        height: 30px;
+        width: 60%;
+      }
+      label {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-size: x-large;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <form action="" id="Myform">
+        <label for="">First Name</label>
+        <input  id="fname" type="text" name="Fname" placeholder="Enter First Name" />
+        <br /><br />
+        <label for="">Last Name</label>
+        <input id="lname" type="text" name="Lname" placeholder="Enter Last Name" />
+        <br /><br />
+        <label for="">E-mail</label>
+        <input id="email" type="Email" name="email" placeholder="Enter Last Email" />
+        <br /><br />
+        <label for="">Password</label>
+        <input id="password" type="password" name="password" placeholder="Enter password" />
+        <br /><br />
+        <label for="">Confirm Password</label>
+        <input
+          id="Cnpassword"
+          type="password"
+          name="Confirm Password"
+          placeholder="Confirm Password"/>
+        <br /><br />
+        <button onclick="validateForm()">Submit</button>
+      </form>
+    </main>
+    <script>
+         function validateForm()
+         {
+       var fname=document.getElementById('fname').value
+       var lname=document.getElementById('lname').value
+       var email=document.getElementById('email').value
+       var password=document.getElementById('password').value
+       var Cnpassword=document.getElementById('Cnpassword').value
+      event.preventDefault()
+        if(fname=="" )
+       {
+      // alert("All the input fields should be filled")
+       var fname=document.getElementById('fname')
+       fname.style.border="2px solid red"
+       }
+       else if(lname=="")
+       {
+        var lname=document.getElementById('lname')
+        lname.style.border="2px solid red"
+       }
+       else if(email=="")
+       {
+        var email=document.getElementById('email')
+        email.style.border="2px solid red"
+       }
+       else if(password=="")
+       {
+        var password=document.getElementById('password')
+        password.style.border="2px solid red"
+       }
+       else if(Cnpassword=="")
+       {
+        var Cnpassword=document.getElementById('Cnpassword')
+        Cnpassword.style.border="2px solid red"
+       }
+       else if(password!=Cnpassword)
+       {
+        alert("Password is not matching")
+       }
+       else
+       {
+        alert("Form submited successfully")
+       }
+       }
+    </script>
+  </body>
+</html>

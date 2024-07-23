@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Html Tags</title>
+</head>
+<body>
+   <script>
+    var image = document.createElement('img'); // create an img element, not an attribute
+    image.setAttribute('src', 'https://cdn.motor1.com/images/mgl/MkO9NN/s1/future-supercars.webp');
+    image.setAttribute('width', '300'); // set width and height as strings
+    image.setAttribute('height', '300');
+
+    var body = document.body;
+    body.appendChild(image);
+
+    var input = document.createElement('input');
+    input.setAttribute('type', 'text');
+    input.setAttribute('name', 'fname');
+    input.setAttribute('placeholder', "enter first name");
+    body.appendChild(input); // append the input element, not a string
+</script> 
+</body>
+</html>
